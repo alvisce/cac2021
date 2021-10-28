@@ -1,0 +1,47 @@
+header .nav-link-comprar {
+	color: #28a642 !important;
+}
+
+header .nav-link-comprar:hover {
+	color: #28cb42 !important;
+}
+
+header .nav-link-comprar.active {
+	color: #28cb42 !important;
+}
+
+@media (min-width: 240px) {
+	header img {
+		display: flex;
+	}
+}
+
+@media (min-width: 375px) {
+	header img {
+		display: inline-block;
+	}
+}
+
+/*108.167.181.242:21;*/
+
+#venta .form-boton {
+	color: #fff;
+	background-color: #96c93e;
+	border-color: #96c93e;
+}
+
+#venta .form-boton:hover {
+	color: #fff;
+	background-color: #96d93e;
+	border-color: #96d93e;
+}
+
+footer .nav-link {
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+	footer .nav-item {
+		flex: 0 1 0 !important;
+	}
+}

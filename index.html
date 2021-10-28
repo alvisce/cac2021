@@ -1,100 +1,228 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Bootstrap - Actividad obligatoria</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trabajo Pr&aacute;ctico Integrador JavaScript</title>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="./css/bootstrap.min.css">	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-<body class="bg-light">
-	<header>
+<body>
+	<header class="container-xxl" style="background-color: #333a40;">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<span class="navbar-brand" style="font-size: 1.5rem;">
+					<img src="./img/codoacodo.png" class="align-text-center" width="110px">Conf Bs As
+				</span>
+				<button 
+					class="navbar-toggler" 
+					type="button" 
+					data-bs-toggle="collapse" 
+					data-bs-target="#menu-inicio" 
+					aria-controls="menu-inicio" 
+					aria-expanded="false" 
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end mx-2" id="menu-inicio">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link text-end">La conferencia</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link text-end">Los oradores</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link text-end">El lugar y la fecha</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link text-end">Convi&eacute;rtete en orador</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link text-end nav-link-comprar active">Comprar tickets</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Codo a Codo</a>
-
-			<!-- Boton Menu para pantallas chicas (Responsive) -->
-			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<!-- Opciones de Menu -->
-			<div class="collapse navbar-collapse" id="navbarToggler">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled">Desactivado</a>
-					</li>
-				</ul>
-				<form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-					<button class="btn btn-outline-success" type="submit">Buscar</button>
-				</form>
-			</div>
-		</div>
-	</nav>	
-
-	<main>
-		<div class="card-group mx-2">
-			<div class="card">
-				<img src="img/html5_img.png" class="card-img-top" alt="">
-				<div class="card-body">
-					<h5 class="card-title">t&iacute;tulo 1</h5>
-					<p class="card-text">Contenido de Card</p>
-					<p class="card-text"><small class="text-muted">&Uacute;ltima actualizaci&oacute;n 1</small></p>
+	<main class="container-xxl p-0 bg-light">
+		<section id="venta" class="py-3">
+			<!-- DESCUENTOS -->
+			<div class="row g-0 justify-content-center">
+				<div class="col-7 col-md-3 col-lg-2 g-1">
+					<div class="card rounded-1 border-primary">
+						<div class="card-body text-center">
+							<h5 class="card-title">Estudiante</h5>
+							<p class="card-text">Tiene un descuento</p>
+							<p class="card-text"><b>80%</b></p>
+							<p class="card-text"><small class="text-muted">* presentar documentaci&oacute;n</small></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-7 col-md-3 col-lg-2 g-1">
+					<div class="card rounded-1 border-info">
+						<div class="card-body text-center">
+							<h5 class="card-title">Trainee</h5>
+							<p class="card-text">Tiene un descuento</p>
+							<p class="card-text"><b>50%</b></p>
+							<p class="card-text"><small class="text-muted">* presentar documentaci&oacute;n</small></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-7 col-md-3 col-lg-2 g-1">
+					<div class="card rounded-1 border-warning">
+						<div class="card-body text-center">
+							<h5 class="card-title">Junior</h5>
+							<p class="card-text">Tiene un descuento</p>
+							<p class="card-text"><b>15%</b></p>
+							<p class="card-text"><small class="text-muted">* presentar documentaci&oacute;n</small></p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- TITULOS -->
+			<div class="row g-0 justify-content-center">
+				<div class="col-10 py-2 d-grid text-center">
+					<small>VENTA</small>
+					<h1>VALOR DE TICKET $200</h1>
 				</div>
 			</div>
-			<div class="card">
-				<img src="img/css3_img.png" class="card-img-top" alt="">
-				<div class="card-body">
-					<h5 class="card-title">t&iacute;tulo 2</h5>
-					<p class="card-text">Contenido de Card</p>
-					<p class="card-text"><small class="text-muted">&Uacute;ltima actualizaci&oacute;n 1</small></p>
+			<!-- FORM DE VENTA -->
+			<form class="justify-content-center">
+				<div class="row g-0 justify-content-center">
+					<!-- NOMBRE -->
+					<div class="col-10 col-sm-8 col-md-4 col-lg-3 gx-2">
+						<p>
+							<input type="text" class="form-control form-data" name="nombre" placeholder="Nombre" required>
+						</p>
+					</div>
+					<!-- APELLIDO -->
+					<div class="col-10 col-sm-8 col-md-4 col-lg-3 gx-2">
+						<p>
+							<input type="text" class="form-control form-data" name="apellido" placeholder="Apellido" required>
+						</p>
+					</div>
+				</div>
+				<!-- CORREO -->
+				<div class="row g-0 justify-content-center">
+					<div class="col-10 col-sm-8 col-lg-6 gx-2">
+						<p>
+							<input type="email" class="form-control form-data" name="correo" placeholder="Correo">
+						</p>
+					</div>
+				</div>
+				<div class="row g-0 justify-content-center">
+					<!-- CANTIDAD -->
+					<div class="col-10 col-sm-8 col-md-4 col-lg-3 gx-2">
+						<p class="input-group">
+							<label for="cantidad" class="input-group-text">Cantidad</label>
+							<input id="cantidad" type="number" class="form-control form-data" name="cantidad" min="1" max="5000" placeholder="0" required>
+							<div class="invalid-feedback">
+								Please choose a username.
+							</div>
+						</p>
+					</div>
+					<!-- CATEGORIAS -->
+					<div class="col-10 col-sm-8 col-md-4 col-lg-3 gx-2">
+						<p class="input-group">
+							<label for="categoria" class="input-group-text">Categoria</label>
+							<select id="categoria" class="form-select form-data" name="categoria">
+								<option value="0" selected>Sin categoria</option>
+								<option value="80">Estudiante</option>
+								<option value="50">Trainee</option>
+								<option value="15">Junior</option>
+							</select>
+						</p>
+					</div>
+				</div>
+			</form>
+			<!-- TOTAL A PAGAR (ALERTA) -->
+			<div class="row g-0 justify-content-center my-2">
+				<div class="col-10 col-sm-8 col-lg-6 g-2">
+					<div class="alert alert-primary" role="alert" id="resumen">
+						Total a pagar: $
+					</div>
 				</div>
 			</div>
-			<div class="card">
-				<img src="img/bootstrap_img.png" class="card-img-top" alt="">
-				<div class="card-body">
-					<h5 class="card-title">t&iacute;tulo 3</h5>
-					<p class="card-text">Contenido de Card</p>
-					<p class="card-text"><small class="text-muted">&Uacute;ltima actualizaci&oacute;n 1</small></p>
+			<!-- BOTON -->
+			<div class="row g-0 justify-content-center text-center">
+				<!-- BTN BORRAR -->
+				<div class="col-10 col-sm-4 col-md-4 col-lg-3 g-2 d-grid">
+					<button type="button" class="btn bg-gradient form-boton" name="borrar">Borrar</button>
+				</div>
+				<!-- BTN RESUMEN (CALCULAR) -->
+				<div class="col-10 col-sm-4 col-md-4 col-lg-3 g-2 d-grid">
+					<button type="button" class="btn bg-gradient form-boton" name="resumen">Resumen</button>
 				</div>
 			</div>
-		</div>	
-		<div class="mx-2 my-4">
-		<form>
-			<div class="mb-3">
-				<label for="input-email" class="form-label">Correo electr&oacute;nico</label>
-				<input type="email" class="form-control" id="input-email" aria-describedby="emailHelp">
-				<div class="form-text" id="emailHelp">Nunca comparta su correo electr&oacute;nico.</div>
+			<!-- MODAL -->
+			<div class="modal fade" tabindex="-1" aria-labelledby="modal-alerta-titulo" aria-hidden="true" id="modal-alerta">
+				<div class="modal-dialog">
+					<div class="modal-content bg-light">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal-alerta-titulo">Validaci&oacute;n</h5>
+						</div>
+						<div class="modal-body" id="modal-alerta-desc">
+						</div>
+						<div class="modal-footer justify-content-center">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="mb-3">
-				<label for="input-email-pass" class="form-label">Contrase&ntilde;a</label>
-				<input type="password" class="form-control" id="input-email-pass">
-			</div>
-			<div class="mb-3 form-check">
-				<input type="checkbox" class="form-check-input" id="check-email">
-				<label class="form-check-label" for="check-email">Verificar</label>
-			</div>
-			<button type="submit" class="btn btn-primary">
-				Enviar
-			</button>
-		</form>
-		</div>
+		</section>
 	</main>
-	
-	<footer></footer>
 
-	<!-- Popper & Bootstrap JS -->
-	<script src="./js/popper.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
+	<footer class="container-xxl py-3" style="background-color: #1d4255;">
+		<div class="container">
+			<ul class="nav nav-fill flex-column flex-sm-row justify-content-center align-items-center">
+				<li class="nav-item mx-auto">
+					<a href="#" class="nav-link active">
+						<small>Preguntas frecuentes</small>
+					</a>
+				</li>
+				<li class="nav-item mx-auto">
+					<a href="#" class="nav-link">
+						<small>Cont&aacute;ctanos</small>
+					</a>
+				</li>
+				<li class="nav-item mx-auto">
+					<a href="#" class="nav-link">
+						<small>Prensa</small>
+					</a>
+				</li>
+				<li class="nav-item mx-auto">
+					<a href="#" class="nav-link">
+						<small>Conferencias</small>
+					</a>
+				</li>
+				<li class="nav-item mx-auto">
+					<a href="#" class="nav-link">
+						<small>T&eacute;rminos y condiciones</small>
+					</a>
+				</li>
+				<li class="nav-item mx-auto">
+					<a href="#" class="nav-link">
+						<small>Privacidad</small>
+					</a>
+				</li>
+				<li class="nav-item mx-auto">
+					<a href="#" class="nav-link">
+						<small>Estudiantes</small>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="./js/popper.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
